@@ -5,21 +5,21 @@
 class Nanaoki < Formula
   desc "Stop your coding agents from repeating mistakes they already fixed. Local, no LLM."
   homepage "https://nanaoki.com"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JustinyAhin/nanaoki/releases/download/v0.1.1/nanaoki_0.1.1_darwin_amd64.tar.gz"
-      sha256 "3086ec4c45055448d11143b29e626bfe4e0fd5ae6c06ec099e42d95d8c5fad57"
+      url "https://github.com/JustinyAhin/nanaoki/releases/download/v0.1.2/nanaoki_0.1.2_darwin_amd64.tar.gz"
+      sha256 "9aba73be7d38e29594ff05d411137d42a741eabfd96f06b91d8331d95f708964"
 
       define_method(:install) do
         bin.install "nanaoki"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JustinyAhin/nanaoki/releases/download/v0.1.1/nanaoki_0.1.1_darwin_arm64.tar.gz"
-      sha256 "94eabbb0dd5afe5fc5de09a03b108c7cfa1eb9d48e44d6f9a7a33dd386a6090c"
+      url "https://github.com/JustinyAhin/nanaoki/releases/download/v0.1.2/nanaoki_0.1.2_darwin_arm64.tar.gz"
+      sha256 "1818968e39a715dfa7786773d91e024344aff51da56c4d4e089fbee1bf9fd774"
 
       define_method(:install) do
         bin.install "nanaoki"
@@ -29,15 +29,15 @@ class Nanaoki < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JustinyAhin/nanaoki/releases/download/v0.1.1/nanaoki_0.1.1_linux_amd64.tar.gz"
-      sha256 "06df6fdb6971a24ce27b79cc8b04d5afed271bb6d065ec8af7a62cb9babd3101"
+      url "https://github.com/JustinyAhin/nanaoki/releases/download/v0.1.2/nanaoki_0.1.2_linux_amd64.tar.gz"
+      sha256 "79fb571dfee26bfebb545586f76297b0924ef86b349813bc93c5d4fa3868531b"
       define_method(:install) do
         bin.install "nanaoki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JustinyAhin/nanaoki/releases/download/v0.1.1/nanaoki_0.1.1_linux_arm64.tar.gz"
-      sha256 "af8fe1ea398954554c8971f3f9bfc2109066c8d74dc69dd8c838f2573a9fa296"
+      url "https://github.com/JustinyAhin/nanaoki/releases/download/v0.1.2/nanaoki_0.1.2_linux_arm64.tar.gz"
+      sha256 "b7e58957a0996303d824160a0f1d92b896161a18f637e104672f35621e493926"
       define_method(:install) do
         bin.install "nanaoki"
       end
